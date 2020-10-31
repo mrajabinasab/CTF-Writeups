@@ -1,0 +1,25 @@
+Challenge:
+You download the file, you stay in this challenge, and I show you how deep the file goes. Remember: all I'm offering is the flag. Nothing more.
+
+Answer:
+As the name suggests, this challenge is about a zipfile of a zipfile of a zipfile of a zipfile of a ...
+At each step, the zipfile name is base64 and the password to extract it is the base64 decoded name.
+so all we need is a simple python script to do that for us:
+import os
+import base64
+from zipfile import ZipFile
+
+
+i=1
+while i==1:
+	for f in os.listdir('.'):
+		if f.endswith(".zip"):
+			p = os.path.splitext(f)[0]
+			passw2 = base64.b64decode(p)
+			passw = passw2.decode('utf-8')
+			with ZipFile(f) as zf:
+				zf.extractall(pwd=bytes(passw))
+			print(f)
+            os.remove(f)
+
+after extracting 10000 times (!), the challenge will be solved.

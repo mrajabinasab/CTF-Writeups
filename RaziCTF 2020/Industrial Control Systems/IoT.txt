@@ -1,0 +1,6 @@
+Challenge: 
+In order to prevent disconnection of an IoT device from the MQTT server, which function must be placed in the main loop of the program? 
+(esp8266 module, c++ language) The answer is not in the regular flag format.
+
+Answer:
+This challenge was more than easy! if you know just a little bit about programming an IoT device, you would now that the answer is client.loop().

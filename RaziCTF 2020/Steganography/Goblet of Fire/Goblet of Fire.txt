@@ -1,0 +1,9 @@
+Challenge:
+I think Granger is smart enough to help you solve this challenge!
+
+Answer:
+This challenge has a very good hint!
+First we open the txt file. At first it looks like a chapter of the Harry Potter story, but if we use CTRL+A, we can see that there are a lot of tabs and spaces.
+So, it seems to be a whitespace stegano!
+Best tool we now for whitespace Steganography is stegsnow. It needs a password and luckily the password is provided in the hint. Yes, Granger is very Smart! :D
+RaziCTF{175_ju57_tabs_4nd_5p4c35}

@@ -1,0 +1,11 @@
+Challenge:
+These files belong to Lucius. I found them in his flash drive, but I could not open them. 
+Can you figure out how to open them? Please avoid opening any unnecessary and dangerous files.
+
+Answer:
+In this challenge there are several files inside a zip file.
+After extracting the zip file, printui.dll seems interesting. maybe it prints the flag, somehow. let's dig into that.
+If we analyze this file using binwalk, we can see that there is a text file hidden in it.
+we use binwalk inorder to extract that and it contains the flag.
+easy, right?!
+RaziCTF{5pl17_4nd_j01n}

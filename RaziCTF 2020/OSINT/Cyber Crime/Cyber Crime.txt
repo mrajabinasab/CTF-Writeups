@@ -1,0 +1,10 @@
+Challenge:
+Enter the twitter ID of a father linked to GandCrab Ransomware. Flag is not in the regular flag format.
+
+Answer:
+Well, this challenge is about a famous story in the cyber security world. The Hacker with a Heart!
+It is about the syrian father, a war survivor who was attacked by the ransomware.
+When the hacker found out about the situation, he (or she) gave him the key to restore his data.
+If we search a little bit, we can find the twitter account:
+جميل سليمان
+@kvbNDtxL0kmIqRU

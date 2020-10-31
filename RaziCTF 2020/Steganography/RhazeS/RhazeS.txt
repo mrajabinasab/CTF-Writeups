@@ -1,0 +1,9 @@
+Challenge:
+Find the hidden chemical formula in this depiction of an alchemist known as Rhazes.
+
+Answer:
+All we have is a jpg file. We can try several tools in order to solve the challenge but the tool that will eventually help us is steghide.
+Steghide needs a passphrase to extract the hidden data, we try the filename and it works!
+Now we can see that there is another image hidden in the main image. It's name is MagicSanitizer and if we open it we can see that it looks like a MagicEye encoding.
+Using an online magiceye solver tool, the flag is revealed: 
+RaziCTF{C2H50H_kl1l5_54r5_c0v_2}

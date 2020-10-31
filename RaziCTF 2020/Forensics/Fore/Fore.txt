@@ -1,0 +1,7 @@
+Challenge:
+Music relaxes your mind Hint: Find the Link
+
+Answer:
+Well, what an obvious hint! we are provided with a pcap file, so all we need to do is to use wireshark in order to look for audio files (Export Objects Section)
+or search for "music" in streams. After a little digging, we find our link:
+RaziCTF{http://www.coca.ir/ey-iran-gholamhossein-banan-music/}

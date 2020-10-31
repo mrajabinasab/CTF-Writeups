@@ -1,0 +1,19 @@
+Challenge:
+There are 10 slaves in an industrial network, the master sends a request like below to control 5 outputs of a slave to high. Change the slave id to 4, 
+change the sending packet to control just the first output to high, and the remaining to low and submit the new request. 
+(protocol is Modbus RTU and data is in Hex format). Master req. = 09 0F 00 00 00 05 01 1F 2F 38 The answer is not in the regular flag format.
+
+Answer:
+In order to solve this challenge, we just need to have a little knowledge about modbus protocol. 
+There is also a great online tool available:
+https://rapidscada.net/modbus/ModbusParser.aspx
+In RTU request mode:
+First byte is the slave id,
+next byte is the function id,
+next two bytes are the starting address,
+next two bytes are the quantity,
+next byte is the byte count,
+next bytes (depending on the previous two bytes value) are the actual data (output value),
+and last two bytes represent CRC.
+Hence, the answer will be:
+04 0F 00 00 00 05 01 01 6E A9

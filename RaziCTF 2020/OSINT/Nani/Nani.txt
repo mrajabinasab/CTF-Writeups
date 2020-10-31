@@ -1,0 +1,14 @@
+Challenge:
+I traveled to see one of my favorite anime's studio, when I was close to the building, 
+I took this picture. the flag is that studio's name. Submit the flag like this: RaziCTF{NAMEstudio}
+
+Answer:
+All we have is an image, and the fact that we must find an anime studio.
+If we take a closer look, we can see that there is a google logo and a copyright on the image.
+It seems to be a screenshot from Google Streetview! so let's dig in.
+I used bing in order to do a reverse image search and I found out that the tower is The Musashino Tower! GREAT PROGRESS, RIGHT?!
+Next I used Streetview to walk the streets Until I reached the exact place that the photo was taken:
+https://goo.gl/maps/m1jfK9peuejJYQvZ9
+After that, all I had to do was to search for nearby anime studios and the nearest one was Wit Studio and it was our flag!
+RaziCTF{witstudio}
+P.S: an obvious problem in the hint about how we must enter the flag. it was sad.

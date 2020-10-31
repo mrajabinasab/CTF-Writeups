@@ -1,0 +1,6 @@
+Challenge: 
+In order to connect to a MQTT server with security authentication (username, password) which function can be used in the program.
+(esp8266 module, c++ language). The answer is not in the regular flag format.
+
+Answer:
+This challenge was more than easy! if you know just a little bit about programming an IoT device, you would now that the answer is client.connect().

@@ -1,0 +1,8 @@
+Challenge:
+This guy protected his music program with a serial number. Can you crack it?
+
+Answer:
+This challenge was very easy to solve.
+All we have to do is to use strings command on the executable. It gives us some strings which look like serial numbers.
+if we use 1337-1337-1337-1337, the flag will be printed by the program:
+RaziCTF{your_fl4g_is_this_cute_flag}

@@ -1,0 +1,17 @@
+Challenge:
+In an industrial Modbus RTU network based on RS485 bus, the master wants to read a sensor data, the data packet has been sent to the slave is like below. 
+Send the slave response to the master, also imagine the slave data is 40 (decimal). (data is in Hex format) 
+Master req. = 06 03 00 00 00 01 85 BD The answer is not in the regular flag format.
+
+Answer:
+In order to solve this challenge, we just need to have a little knowledge about modbus protocol. 
+There is also a great online tool available:
+https://rapidscada.net/modbus/ModbusParser.aspx
+In RTU response mode:
+First byte is the slave id,
+next byte is the function id,
+next byte is  the number of data bytes,
+next bytes (depending on the previous two bytes value) are the actual data,
+and last two bytes represent CRC.
+Hence, the answer will be:
+06 03 02 00 28 0D 9A

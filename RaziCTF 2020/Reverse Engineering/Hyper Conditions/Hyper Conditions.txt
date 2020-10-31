@@ -1,0 +1,10 @@
+Challenge:
+This guy protected his hello world program with a strange serial number. Can you crack it?
+
+Answer:
+There are many approaches for solving reverse engineering challenges, in this writeup we gonna use a fast and easy approach.
+All we have to do is to open the executable with IDA-Pro and read the main function.
+We can see that there are some characters getting PUSHed in this function. At first they seem random but if we take a closer look we can see that they are actually
+meaningful. There are numbers representing alphabets and sometimes the words are scrambled, but still we can guess the flag (hoping the authors have a good english
+understaning) :
+RaziCTF{6r347_3ff0r7_w311_d0n3}
