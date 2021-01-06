@@ -1,0 +1,17 @@
+I was actually trying to solve SUDOGF challenge and in the gpg keyfile, I found this email:
+tjsince1337@gmail.com
+sending an email to this address, hoping to find an answer to SUDOGF challenge, I recieved this email:
+
+Hello Warrior!
+
+I must say, You have worked hard to reach here. Well, I won't disappoint you xD
+Here is your power spell,
+
+If you haven't got the Real Owner of that photograph then you must get that first! He has a tag line though "Just jumped off runway 26L"
+
+Cheers Mate! 
+Tom
+
+As I already read The Watcher challenge, I knew that we needed to wrap the photographer's email
+into vulncon{}, using the hint => "Just jumped off runway 26L" 
+We can find out that the photographer is Agustin Anaya the email is: m.venema@dutchops.com

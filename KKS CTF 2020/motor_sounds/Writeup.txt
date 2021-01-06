@@ -1,0 +1,5 @@
+In this challenge we are provided with a gcode file.
+A little bit of search and then we can understand that this is a 3d printer file.
+there are several online tools in order to work on these files.
+we use https://gcode.ws/
+and the flag is revealed in the middle layer: kks{W3_c@N_1n_3D!}

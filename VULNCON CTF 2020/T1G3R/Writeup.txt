@@ -1,0 +1,19 @@
+We are provided with a zip file including another zip file flag.zip and a jpg file
+the jpg file contains an image of tiger, as the challenge name suggests.
+after trying several tools, I used steghide. it asks for a password in order to recover
+the data, I tried tiger and it was the answer!
+we are provided with a hash.txt file which contains 6e2dfb581bbe2b0f82e59781fb962ff9099e8d82f45f1496
+I used tunnelsup hash analyzer in order to analyze the hash. It is a 48 character/ 192bit hash.
+let's search for 192bit hash functions...
+the second result in google is Tiger hash! interesting ... 
+I used https://md5hashing.net/hash/tiger192 for decryption, decrypting the hash provides us with the password of the zip file flag.zip.
+this zip file contains an executable file, running the executable elf64 file, it returns this string:
+
+pi pi pi pi pi pi pi pi pi pi pika pipi pi pipi pi pi pi pipi pi pi pi pi pi pi pi pipi pi pi pi pi pi pi pi pi pi pi pichu pichu pichu pichu ka chu pipi pipi pipi pipi pi pi pi pi pikachu pi pi pi pi pi pi pi pi pi pi pi pi pikachu pikachu ka ka ka ka pikachu pi pi pi pikachu pichu ka ka ka ka ka ka ka ka ka ka ka ka pikachu ka ka ka ka ka ka ka ka ka ka ka pikachu pikachu pipi ka ka ka pikachu ka ka ka ka ka ka ka ka ka ka ka ka ka ka ka pikachu pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pikachu pi pikachu ka ka ka ka ka ka ka ka ka ka ka ka ka ka ka pikachu ka ka ka pikachu pi pi pi pi pi pi pi pikachu pi pi pi pi pi pikachu pichu ka pikachu pipi ka ka ka ka ka ka ka ka ka ka ka pikachu pi pi pi pi pi pi pi pi pi pi pi pi pikachu ka ka pikachu pichu pi pikachu pipi ka ka ka ka ka ka ka ka ka ka ka ka ka ka ka ka ka ka ka ka pikachu ka pikachu pikachu pichu pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pikachu pi pi pi pi pi pi pi pi pikachu pipi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pi pikachu pichu pi pi pi pi pi pi pi pikachu pipi ka ka ka ka pikachu
+
+at first it seems to be a nonsense string from Pokemon language, but looking more closely and a little searching, helps us to find out that it is a variation of
+brainfuck language. using pikalang python library, we can easily write a script to decode this string. the script file pika.py
+running this script we are provided with a pastebin link: 
+https://pastebin.com/YXXBJwQs
+Openning this link, we are finally able to see the flag:
+vulncon{@Tiger_are_preu_hackers!!!!}

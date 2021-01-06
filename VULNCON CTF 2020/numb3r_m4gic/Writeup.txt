@@ -1,0 +1,6 @@
+If we pay a close attention to this challenge we will be able to relize that 
+R(1) is an array and R(1)[0] = R(0)[0]+R(0)[1] and R(1)[1] = R(0)[1]+R(0)[2] and so on...
+So all we have to do is to write a script for solving it.
+magnum.py is the solution.
+All we have to do now is to get md5 hashum of output saved in a answer.txt file
+using md5sum command as the hint suggests and wrap it in vulncon{} and we will have the flag
