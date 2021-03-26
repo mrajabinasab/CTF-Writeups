@@ -1,0 +1,2 @@
+Just needed to search for social media accounts about l.beck. then we find about.me account and it redirects us to reddit.
+There, we see a gif. Inside the gif there is a qr code and scanning it gives us the flag.
