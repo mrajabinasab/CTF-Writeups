@@ -1,0 +1,20 @@
+Stringy Things:
+As the name mentions, we only need to use strings on the file in order to find the flag.
+
+HTML:
+We only needed to view page source!
+
+Magic Bytes:
+File extension was false, we only needed to check the true extension using the file command and then rename it and view it as a png file.
+
+Run ELF:
+We only had to make the elf executable and run it!
+
+Cipher Gauntlet:
+Using Cyberchef, first from binary to base64, then to plain text. Then we need to use caesar cipher and it is done.
+
+Sizzling Bacon:
+Obviously a baconian cipher. only needed to use an online tool with the ability to change the defaults from A and B to S and s.
+
+Various Vernacular:
+Simple substitution cipher, only in german. Could be done using most of the online tools.
