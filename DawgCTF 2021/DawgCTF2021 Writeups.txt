@@ -1,0 +1,48 @@
+I had several hours to work on this one and the results were acceptable.
+
+Baby's first modulation:
+Just needed to play the iq file using gqrx.
+DawgCTF{listen_in_on_the_waves}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Turning In:
+Same as the previous one, just needed to tune the radio.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Bad Apple:
+Just a simple sql injection payload:
+username=admin&password=1' OR '1'='1
+Then we can check the source and get the flag.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Tag, You're It!:
+The flag was hidden in the metadata's comment, could be extracted using exiftool or even properties in windows!
+DawgCTF{wh0_d0wnl0ads_mus1c_anym0re?}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Third Eye:
+In sonic visualizer we can see the spectogram and in the spectogram there is a hex string. decoding it we get the flag:
+DawgCTF{syn3sth3s1acs}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Just A Comment:
+I Just used strings and grep on the pcap file:
+DawgCTF{w3 h34r7 0ur 1r4d 734m}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Deserted Island Toolkit:
+Converted the cdda to mp3 and then used morsecodeworld adaptive decoder:
+DawgCTF{S0SNOTTHEAN5W3R}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Crack IFS:
+Used strings and found passwd file, then used johnny and rockyou. found cram. then guessed Dawg, CTF{. then again using guessing I found the flag quiet fast.
+DawgCTF{un_scramble}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+These Ladies Paved Your Way:
+Using exiftool we get to U3Bhbm5pbmdUcmVlVmlnCg== and VpwtPBS{r0m5 0W t4x3IB5}, decoding U3Bhbm5pbmdUcmVlVmlnCg== we get to SpanningTreeVig which is the key
+to decode VpwtPBS{r0m5 0W t4x3IB5} using vigenere cipher:
+DawgCTF{l0t5 0F p4t3NT5}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Identifications:
+Used Wifi signals to findout that it is somewhere near DrCappuccino and then used Google StreetView to find the place, afterwards looked for the CLLI code and
+after some tries, we get to the flag:
+DawgCTF{MTARMDMARS1}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Secret App:
+Used strings to find username and password and then entered it into the program to get the flag:
+Hero{H3yyyy_Th4t5_pr3tTy_gO0d}
+

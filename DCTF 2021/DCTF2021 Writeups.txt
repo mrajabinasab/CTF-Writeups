@@ -1,0 +1,16 @@
+I had a few hours to work on this CTF as a hobby and I was able to solve 3 challenges.
+
+Strong Password:
+Fortunately I had Passfab for ZIP, so I just used it with Rockyou dictionary and it gave me the password. After I extracted the archive, I was able to look for
+"dctf" in the txt file and I got the flag:
+dctf{r0cKyoU_f0r_tHe_w1n}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Leak Spin:
+A simple OSINT challenge, Just had to look at the dragonsec github.
+dctf{I_L1k3_L1evaAn_P0lkk4}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Bad Apple:
+This one was a little bit treaky, after watching the video I realized that at the middle of it we have some wierd audio, so I cutted this fragment out and used
+XMedia Recode to convert it to an audio file. Then using Sonic Visualizer I inspected the spectogram and yeah, There was a QR code. After making it b&w, I was
+able to retrieve the flag:
+dctf{sp3ctr0gr4msAreCo0l}
