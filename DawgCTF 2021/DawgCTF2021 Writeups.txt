@@ -7,10 +7,11 @@ DawgCTF{listen_in_on_the_waves}
 Turning In:
 Same as the previous one, just needed to tune the radio.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
-Bad Apple:
+Dr. Hrabowski’s Great Adventure:
 Just a simple sql injection payload:
 username=admin&password=1' OR '1'='1
-Then we can check the source and get the flag.
+Then we can check the source and get the flag:
+DawgCTF{WeLoveTrueGrit}
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 Tag, You're It!:
 The flag was hidden in the metadata's comment, could be extracted using exiftool or even properties in windows!
